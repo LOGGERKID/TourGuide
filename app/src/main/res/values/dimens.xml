@@ -5,6 +5,14 @@
     <dimen name="card_image_height">160dp</dimen>
     <dimen name="text_padding">10dp</dimen>
     <dimen name="card_view_headtext_size">20sp</dimen>
+    <dimen name="DetailedHeadingsSize">26sp</dimen>
+    <dimen name="DetailedImageMargin">5dp</dimen>
+    <dimen name="DetailedHeadingPaddingLeft">8dp</dimen>
+    <dimen name="descriptionHeadText">24sp</dimen>
+    <dimen name="descriptionPaddingVertical">12dp</dimen>
+    <dimen name="descriptionPaddingHorizontal">18dp</dimen>
+    <dimen name="descriptionDetailPaddingLR">16dp</dimen>
+    <dimen name="descriptionDetailTextSize">20sp</dimen>
 
 
 </resources>
