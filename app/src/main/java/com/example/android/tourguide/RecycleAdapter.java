@@ -51,12 +51,10 @@ public class RecycleAdapter extends RecyclerView.Adapter {
 
         @Override
         public void onClick(View v) {
-            Bundle data = new Bundle();
-            data.putSerializable("Places", placesList);
-
-
+            //Bundle data = new Bundle();
+            //data.putSerializable("Places", placesList.get(getAdapterPosition()));
             Intent intent = new Intent(mContext, DetailedView.class);
-            intent.putExtra("Details", this.placesList.get(getAdapterPosition()));
+            intent.putExtra("Details", placesList.get(getAdapterPosition()));
             this.mContext.startActivity(intent);
 
         }

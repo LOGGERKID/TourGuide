@@ -25,9 +25,9 @@ public class HotelFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.recycler_view, container, false);
-        List<Places> placeList = new ArrayList<>();
+        ArrayList<Places> placeList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            placeList.add(new Places(R.mipmap.ic_launcher, "item " + i));
+            placeList.add(new Places(R.mipmap.ic_launcher, "item " + i, "6.5"));
         }
         RecycleAdapter adapter = new RecycleAdapter(getContext(), placeList);
 

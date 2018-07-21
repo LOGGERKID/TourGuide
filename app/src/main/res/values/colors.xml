@@ -6,4 +6,5 @@
     <color name="PureBlack">#000000</color>
     <color name="DescriptionHead">#1642c7</color>
     <color name="contactBackground">#161515</color>
+    <color name="white">#fff</color>
 </resources>
