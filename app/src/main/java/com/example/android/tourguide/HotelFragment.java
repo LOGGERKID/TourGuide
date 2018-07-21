@@ -26,8 +26,8 @@ public class HotelFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.recycler_view, container, false);
         ArrayList<Places> placeList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            placeList.add(new Places(R.mipmap.ic_launcher, "item " + i, "6.5"));
+        for (int i = 0; i < 3; i++) {
+            placeList.add(new Places(R.drawable.bengaluru, "item " + i, "6.5"));
         }
         RecycleAdapter adapter = new RecycleAdapter(getContext(), placeList);
 
@@ -36,7 +36,6 @@ public class HotelFragment extends Fragment {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
-
 
         return rootView;
     }

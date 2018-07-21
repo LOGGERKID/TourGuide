@@ -18,6 +18,7 @@ public class DetailedView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detailed_view);
 
+
         ImageView mainImage = findViewById(R.id.detailedImage);
         ImageView phoneImage = findViewById(R.id.detailedPhone);
         ImageView locationImage = findViewById(R.id.detailedLocation);
@@ -28,6 +29,9 @@ public class DetailedView extends AppCompatActivity {
         mainImage.setImageResource(receivedPlacesToDisplay.getmImageResourceId());
         ratingText.setText(receivedPlacesToDisplay.getmRating());
         descriptionHeading.setText(receivedPlacesToDisplay.getmHeading());
+
+        String Title = receivedPlacesToDisplay.getmHeading();
+        setTitle(Title);
 
         phoneImage.setOnClickListener(new View.OnClickListener() {
             @Override
