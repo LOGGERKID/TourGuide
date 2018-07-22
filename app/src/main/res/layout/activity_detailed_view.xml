@@ -1,110 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".DetailedView">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/detailedImage"
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_margin="@dimen/DetailedImageMargin"
-        android:scaleType="fitXY"
-        android:src="@mipmap/ic_launcher" />
-
-    <TextView
-        android:id="@+id/detailedHead"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/detailedImage"
-        android:fontFamily="sans-serif-smallcaps"
-        android:paddingLeft="@dimen/DetailedHeadingPaddingLeft"
-        android:text="@string/card_view_heading"
-        android:textSize="@dimen/DetailedHeadingsSize"
-        android:textStyle="bold"
-        tools:targetApi="jelly_bean" />
+        tools:context=".DetailedView">
 
-    <LinearLayout
-        android:id="@+id/contactDetails"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/detailedHead"
-        android:background="@color/PureBlack"
-        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/detailedImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/DetailedImageMargin"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
 
-        <ImageButton
-            android:id="@+id/detailedPhone"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/detailedHead"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/contactBackground"
-            android:src="@drawable/outline_local_phone_white_36" />
-
-
-        <ImageButton
-            android:id="@+id/detailedLocation"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/contactBackground"
-            android:src="@drawable/outline_place_white_36" />
+            android:layout_below="@+id/detailedImage"
+            android:fontFamily="sans-serif-smallcaps"
+            android:paddingLeft="@dimen/DetailedHeadingPaddingLeft"
+            android:text="@string/card_view_heading"
+            android:textSize="@dimen/DetailedHeadingsSize"
+            android:textStyle="bold"
+            tools:targetApi="jelly_bean" />
 
         <LinearLayout
-            android:id="@+id/detailedRatingsView"
-            android:layout_width="0dp"
+            android:id="@+id/contactDetails"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:layout_weight="1"
-            android:background="@color/contactBackground"
+            android:layout_below="@+id/detailedHead"
+            android:background="@color/PureBlack"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/detailedStar"
+            <ImageButton
+                android:id="@+id/detailedPhone"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:scaleType="centerInside"
-                android:src="@drawable/outline_star_white_36"
-                tools:ignore="NestedWeights" />
+                android:background="@color/contactBackground"
+                android:src="@drawable/outline_local_phone_white_36" />
 
-            <TextView
-                android:id="@+id/detailedRating"
+
+            <ImageButton
+                android:id="@+id/detailedLocation"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/rating_number"
-                android:textColor="#ffffff"
-                android:textSize="30sp" />
+                android:background="@color/contactBackground"
+                android:src="@drawable/outline_place_white_36" />
+
+            <LinearLayout
+                android:id="@+id/detailedRatingsView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:background="@color/contactBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detailedStar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/outline_star_white_36"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/detailedRating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rating_number"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactDetails"
+            android:paddingBottom="@dimen/descriptionPaddingHorizontal"
+            android:paddingLeft="@dimen/descriptionPaddingVertical"
+            android:paddingRight="@dimen/descriptionPaddingVertical"
+            android:paddingTop="@dimen/descriptionPaddingHorizontal"
+            android:text="@string/descriptionHead"
+            android:textColor="@color/DescriptionHead"
+            android:textSize="@dimen/descriptionHeadText" />
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/contactDetails"
-        android:paddingBottom="@dimen/descriptionPaddingHorizontal"
-        android:paddingLeft="@dimen/descriptionPaddingVertical"
-        android:paddingRight="@dimen/descriptionPaddingVertical"
-        android:paddingTop="@dimen/descriptionPaddingHorizontal"
-        android:text="@string/descriptionHead"
-        android:textColor="@color/DescriptionHead"
-        android:textSize="@dimen/descriptionHeadText" />
-
-    <TextView
-        android:id="@+id/descriptionDetail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/description"
-        android:paddingLeft="@dimen/descriptionDetailPaddingLR"
-        android:paddingRight="@dimen/descriptionDetailPaddingLR"
-        android:text="details"
-        android:textSize="@dimen/descriptionDetailTextSize" />
+        <TextView
+            android:id="@+id/descriptionDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:paddingLeft="@dimen/descriptionDetailPaddingLR"
+            android:paddingRight="@dimen/descriptionDetailPaddingLR"
+            android:text="details"
+            android:textSize="@dimen/descriptionDetailTextSize" />
 
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

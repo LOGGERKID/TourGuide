@@ -24,11 +24,13 @@ public class DetailedView extends AppCompatActivity {
         ImageView locationImage = findViewById(R.id.detailedLocation);
         TextView descriptionHeading = findViewById(R.id.detailedHead);
         TextView ratingText = findViewById(R.id.detailedRating);
+        TextView description = findViewById(R.id.descriptionDetail);
 
         Places receivedPlacesToDisplay = (Places) getIntent().getSerializableExtra("Details");
         mainImage.setImageResource(receivedPlacesToDisplay.getmImageResourceId());
         ratingText.setText(receivedPlacesToDisplay.getmRating());
         descriptionHeading.setText(receivedPlacesToDisplay.getmHeading());
+        description.setText(receivedPlacesToDisplay.getmDescription());
 
         String Title = receivedPlacesToDisplay.getmHeading();
         setTitle(Title);
