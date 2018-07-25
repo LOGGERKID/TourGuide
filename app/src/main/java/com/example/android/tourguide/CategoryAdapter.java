@@ -16,18 +16,27 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return new AdventureFragment();
+        if (position == 0) return new AdventureFragment();
+        else if (position == 1) return new HeritageFragment();
+        else if (position == 2) return new MuseumFragment();
+        else if (position == 3) return new ParkFragment();
+        else return new PilgrimFragment();
     }
 
     @Override
     public int getCount() {
-        return 1;
+        return 5;
     }
 
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return mContext.getString(R.string.adevnture);
+        if (position == 0) return mContext.getString(R.string.adevnture);
+        else if (position == 1) return mContext.getString(R.string.heritage);
+        else if (position == 2) return mContext.getString(R.string.museum);
+        else if (position == 3) return mContext.getString(R.string.park);
+        else return mContext.getString(R.string.pilgrim);
+
     }
 
 }
