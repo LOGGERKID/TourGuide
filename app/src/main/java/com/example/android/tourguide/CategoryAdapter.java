@@ -16,7 +16,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return new HotelFragment();
+        return new AdventureFragment();
     }
 
     @Override
@@ -27,7 +27,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return mContext.getString(R.string.hotel_title);
+        return mContext.getString(R.string.adevnture);
     }
 
 }
