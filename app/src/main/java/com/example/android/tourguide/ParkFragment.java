@@ -32,13 +32,11 @@ public class ParkFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.recycler_view, container, false);
         ArrayList<Places> placeList = new ArrayList<>();
 
-        placeList.add(new Places(R.drawable.bangalore_bilikal_betta_main, "BILIKAL RANGASWAMY BETTA ", "4.3", getString(R.string.balikal_ranganswamy_betta)));
-        placeList.add(new Places(R.drawable.skandagigri, "SKANDAGIRI / KALAVARA DURGA", "4.2", getString(R.string.skandagiri)));
-        placeList.add(new Places(R.drawable.kanipakam_kaigal_falls_main, "KAIGAL FALLS / DUMUKURALLU WATERFALLS", "3.9", getString(R.string.kaigal_falls)));
-        placeList.add(new Places(R.drawable.shivatemple_main, "SHIVA TEMPLE", "3.1", getString(R.string.shiva_temple)));
-        placeList.add(new Places(R.drawable.ulsoorlake_main, "ULSOOR LAKE", "4.6)", getString(R.string.ulsoor_lake)));
-        placeList.add(new Places(R.drawable.hesaraghattalake_main, "HESARAGHATTA LAKE", "4.2", getString(R.string.hesarghatta_lake)));
-
+        placeList.add(new Places(R.drawable.cariappapark_main, "CARIAPPA PARK", "4.3", getString(R.string.cariappa_m_h)));
+        placeList.add(new Places(R.drawable.funworld_main, "FUN WORLD", "4.2", getString(R.string.fun_world)));
+        placeList.add(new Places(R.drawable.lalbagh_main, "LALBAGH", "3.9", getString(R.string.lalbagh)));
+        placeList.add(new Places(R.drawable.musicalfountain_main, "MUSICAL FOUNTAIN", "3.1", getString(R.string.ind_gan)));
+        placeList.add(new Places(R.drawable.wonderla_main, "WONDER LA", "4.6)", getString(R.string.wonderla)));
         RecycleAdapter adapter = new RecycleAdapter(getContext(), placeList);
 
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler);
