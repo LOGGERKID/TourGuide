@@ -31,12 +31,11 @@ public class MuseumFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.recycler_view, container, false);
         ArrayList<Places> placeList = new ArrayList<>();
 
-        placeList.add(new Places(R.drawable.bangalore_bilikal_betta_main, "BILIKAL RANGASWAMY BETTA ", "4.3", getString(R.string.balikal_ranganswamy_betta)));
-        placeList.add(new Places(R.drawable.skandagigri, "SKANDAGIRI / KALAVARA DURGA", "4.2", getString(R.string.skandagiri)));
-        placeList.add(new Places(R.drawable.kanipakam_kaigal_falls_main, "KAIGAL FALLS / DUMUKURALLU WATERFALLS", "3.9", getString(R.string.kaigal_falls)));
-        placeList.add(new Places(R.drawable.shivatemple_main, "SHIVA TEMPLE", "3.1", getString(R.string.shiva_temple)));
-        placeList.add(new Places(R.drawable.ulsoorlake_main, "ULSOOR LAKE", "4.6)", getString(R.string.ulsoor_lake)));
-        placeList.add(new Places(R.drawable.hesaraghattalake_main, "HESARAGHATTA LAKE", "4.2", getString(R.string.hesarghatta_lake)));
+        placeList.add(new Places(R.drawable.govtmuseum_main, "GOVT MUSEUM", "2.3", getString(R.string.gov_mus)));
+        placeList.add(new Places(R.drawable.hal_aerospace_museum, "HAL AEROSPACE", "4.6", getString(R.string.hal)));
+        placeList.add(new Places(R.drawable.kempegoeda_museum, "KEMPEGOWDA MUSEUM", "4.9", getString(R.string.kemp)));
+        placeList.add(new Places(R.drawable.venkatappagallery_main, "VENKATAPPA ART GALLERY", "4.1", getString(R.string.venkatappa)));
+        placeList.add(new Places(R.drawable.visweswaraiahmuseum_main, "VISHWESHWARAIAH MUSEUM", "3.6)", getString(R.string.vish_ind)));
 
         RecycleAdapter adapter = new RecycleAdapter(getContext(), placeList);
 
