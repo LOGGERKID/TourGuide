@@ -25,15 +25,13 @@ public class HeritageFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.recycler_view, container, false);
         ArrayList<Places> placeList = new ArrayList<>();
 
-        placeList.add(new Places(R.drawable.bangalore_bilikal_betta_main, "BILIKAL RANGASWAMY BETTA ", "4.3", getString(R.string.balikal_ranganswamy_betta)));
-        placeList.add(new Places(R.drawable.skandagigri, "SKANDAGIRI / KALAVARA DURGA", "4.2", getString(R.string.skandagiri)));
-        placeList.add(new Places(R.drawable.kanipakam_kaigal_falls_main, "KAIGAL FALLS / DUMUKURALLU WATERFALLS", "3.9", getString(R.string.kaigal_falls)));
-        placeList.add(new Places(R.drawable.shivatemple_main, "SHIVA TEMPLE", "3.1", getString(R.string.shiva_temple)));
-        placeList.add(new Places(R.drawable.ulsoorlake_main, "ULSOOR LAKE", "4.6)", getString(R.string.ulsoor_lake)));
-        placeList.add(new Places(R.drawable.hesaraghattalake_main, "HESARAGHATTA LAKE", "4.2", getString(R.string.hesarghatta_lake)));
+        placeList.add(new Places(R.drawable.bangalore_avani_main, "AVANI", "2.9", getString(R.string.avani)));
+        placeList.add(new Places(R.drawable.bangalorepalace_main, "BANGALORE PALACE", "4.0", getString(R.string.bangalore_palace)));
+        placeList.add(new Places(R.drawable.tipuspalace_main, "TIPU SULTHAN\'s PALACE", "3.6", getString(R.string.tipu_sulthans_fort)));
+        placeList.add(new Places(R.drawable.tipufort_main, "THE TIPU\'s FORT", "4.5", getString(R.string.tipu_fort)));
+        placeList.add(new Places(R.drawable.highcourt_main, "ULSOOR LAKE", "4.1)", getString(R.string.high_court)));
 
         RecycleAdapter adapter = new RecycleAdapter(getContext(), placeList);
-
         RecyclerView recyclerView = rootView.findViewById(R.id.recycler);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(mLayoutManager);
