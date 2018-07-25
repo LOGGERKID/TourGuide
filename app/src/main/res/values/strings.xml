@@ -6,6 +6,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="adevnture">Adeventure</string>
+    <string name="heritage">Heritage</string>
+    <string name="museum">Museum</string>
+    <string name="park">Park</string>
+    <string name="pilgrim">Pilgrim</string>
     <string name="rating_number">3.1</string>
     <string name="descriptionHead">Description</string>
 
